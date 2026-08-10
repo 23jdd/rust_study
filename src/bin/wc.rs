@@ -2,6 +2,7 @@ use std::env;
 use std::fs;
 use std::io;
 use std::io::BufRead;
+
 fn main()->io::Result<()>{
      let args = env::args().collect::<Vec<String>>();
      if args.len()==1{
@@ -16,3 +17,4 @@ fn main()->io::Result<()>{
      }
      io::Result::Ok(())
 }
+
